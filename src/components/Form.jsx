@@ -30,7 +30,7 @@ const Form = () => {
         onChange={handleText}
       />
       <span className="border"></span>
-      <button type="submit" className="button">
+      <button type="submit" className="button" disabled={text.trim().length === 0}>
         Add
       </button>
     </form>
